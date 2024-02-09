@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  subheader {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    background-color: #b5b9bd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  form[action^="/delete"] {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  form[action^="/delete"] input[type="submit"] {
+    background-color: #DC3545;
+  }
+  
+  form[action^="/delete"] input[type="submit"]:hover {
+    background-color: #bd2130;
+  }  
+
+  img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
