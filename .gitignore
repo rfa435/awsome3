@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+npm-debug.log
+pids
+logs
+results
+build
+
+# Optional - you might want to ignore the following if using npm
+# Grunt intermediate storage (https://www.gruntjs.com/)
+.grunt
+
+# Optional - Ignore bower components
+bower_components/
+
+# Optional - Ignore JSHint temporary files
+**/*.orig
+
+# Optional - Ignore compiled binary addons (https://github.com/TooTallNate/node-gyp/)
+build/
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
