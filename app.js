@@ -29,7 +29,6 @@ sql.connect(config, (err) => {
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routing untuk menampilkan tabel UserData pada halaman utama
 app.get('/', async (req, res) => {
   try {
     const result = await sql.query`SELECT * FROM UserData`;
@@ -81,7 +80,6 @@ app.get('/', async (req, res) => {
   }
 });
 
-// Routing untuk menangani aksi penambahan data
 app.post('/add', async (req, res) => {
   try {
     const { name, phoneNumber, id } = req.body;
@@ -93,8 +91,6 @@ app.post('/add', async (req, res) => {
   }
 });
 
-
-// Routing untuk menangani aksi penghapusan data
 app.post('/delete/:id', async (req, res) => {
   try {
     const userId = req.params.id;
@@ -106,7 +102,6 @@ app.post('/delete/:id', async (req, res) => {
   }
 });
 
-// Jalankan server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
