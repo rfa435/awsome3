@@ -9,7 +9,7 @@ const sql = require('mssql');
 const config = {
   user: 'admin',
   password: 'abhi12345',
-  server: 'meindb.chsyiy64gaiw.ap-southeast-1.rds.amazonaws.com',
+  server: 'dbab3.chsyiy64gaiw.ap-southeast-1.rds.amazonaws.com',
   database: 'meindb',
   port: 1433,
   options: {
